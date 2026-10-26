@@ -44,3 +44,34 @@ body {
   background-color: var(--color-accent);
   padding: 0 40px;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 88px 40px 64px;
+}
+
+.main-nav__logo img {
+  display: block;
+}
+
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.main-nav__link:hover {
+  color: var(--color-accent);
+}
