@@ -20,18 +20,18 @@ body {
 }
 
 .top-bar {
-  min-height: 55px;
+  min-height: 3.4rem;
   display: flex;
   justify-content: flex-end;
   background-color: var(--color-dark);
-  letter-spacing: 1.3px;
+  letter-spacing: 0.09em;
   color: var(--color-white);
-  font-size: 14px;
-  line-height: 23px;
+  font-size: 0.875rem;
+  line-height: 1.6;
   font-weight: 600;
   text-transform: uppercase;
-  gap: 40px;
-  padding-left: 24px;
+  gap: 2.5rem;
+  padding-left: 1.5rem;
 }
 
 .top-bar__info {
@@ -42,14 +42,14 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--color-accent);
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 88px 40px 64px;
+  padding: 2.5rem 5.5rem 2.5rem 4rem;
 }
 
 .main-nav__logo img {
@@ -59,12 +59,12 @@ body {
 .main-nav__list {
   display: flex;
   list-style: none;
-  gap: 48px;
-  font-size: 20px;
+  gap: 3rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 1.5;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
 }
 
 .main-nav__link {
@@ -74,4 +74,61 @@ body {
 
 .main-nav__link:hover {
   color: var(--color-accent);
+}
+
+.container {
+  max-width: 1296px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4.8125rem;
+  line-height: 1.04;
+  color: var(--color-text);
+  font-weight: 900;
+}
+
+.hero {
+  background-image: url("../images/hero-bg.svg");
+  background-size: cover;
+  background-position: center;
+  padding-block: 3rem 10rem;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.hero__text {
+  max-width: 65ch;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-top: 3rem;
+}
+
+.hero__text p + p {
+  margin-top: 1.625rem;
+}
+
+.button {
+  margin-top: 3.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  line-height: 1.4;
+  display: inline-block;
+  padding: 1.1em 1.8em;
+}
+
+.hero__badge {
+  flex-shrink: 0;
 }
