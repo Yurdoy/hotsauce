@@ -115,8 +115,11 @@ h1 {
   margin-top: 1.625rem;
 }
 
-.button {
+.hero__text .button {
   margin-top: 3.25rem;
+}
+
+.button {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -131,4 +134,33 @@ h1 {
 
 .hero__badge {
   flex-shrink: 0;
+}
+
+.promo {
+  margin-top: -6rem;
+}
+
+.promo__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 3rem 5rem;
+  background-image: url("../images/cta-purple-bg.jpg");
+  background-size: cover;
+}
+
+.promo__title {
+  font-size: 2.94rem;
+  max-width: 21ch;
+  font-weight: 900;
+  line-height: 1.06;
+}
+
+.button--large {
+  font-size: 1.4rem;
 }
