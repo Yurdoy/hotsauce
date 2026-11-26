@@ -173,9 +173,8 @@ h1 {
 }
 
 .cookie-banner {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  inset-inline: 0;
   z-index: 10;
   display: flex;
   gap: 1rem;
@@ -237,4 +236,8 @@ h1 {
 .cookie-banner__button--link:hover {
   color: var(--color-cookie-hover);
   background-color: transparent;
+}
+
+.cookie-banner--hidden {
+  display: none;
 }
