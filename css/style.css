@@ -26,6 +26,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .top-bar {
   min-height: 3.4rem;
   display: flex;
@@ -236,6 +242,86 @@ h1 {
 .cookie-banner__button--link:hover {
   color: var(--color-cookie-hover);
   background-color: transparent;
+}
+
+.speakers {
+  padding-top: 10rem;
+  padding-bottom: 11.25rem;
+}
+
+.speakers__title {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.02;
+  font-size: 3.6875rem;
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+.speakers__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin-top: 5rem;
+  gap: 8.6rem 3.25rem;
+}
+
+.speaker-card {
+  text-align: center;
+}
+
+.speaker-card:nth-child(3n + 2) {
+  transform: translateY(4.6875rem);
+}
+
+.speaker-card:nth-child(3n) {
+  transform: translateY(9.375rem);
+}
+
+.speaker-card--cta .speaker-card__name {
+  text-transform: none;
+  font-size: 2.2rem;
+  line-height: 1.08;
+}
+
+.speaker-card__image {
+  margin-inline: auto;
+}
+
+.speaker-card__name {
+  text-transform: uppercase;
+  font-size: 1.9375rem;
+  line-height: 1.03;
+  font-weight: 900;
+  margin-top: 2.5rem;
+  color: var(--color-text);
+}
+
+.speaker-card__role {
+  color: var(--color-text);
+  margin-top: 1.186rem;
+  font-size: 1.375rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.speaker-card__company {
+  display: block;
+  color: var(--color-accent);
+}
+
+.speaker-card__link {
+  margin-top: 2.936rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.063em;
+  line-height: 1.6;
+  font-weight: 800;
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-dark);
 }
 
 .cookie-banner--hidden {
